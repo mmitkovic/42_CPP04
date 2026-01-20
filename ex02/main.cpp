@@ -40,14 +40,12 @@ int main()
 	}
 	std::cout << ": " << animalArr[0]->getType() << std::endl;
 	std::cout << ": " << animalArr[2]->getType() << std::endl;
-	for (int i = 0; i < size; ++i) {
+	for (int i = 0; i < size; ++i)
+	{
 		delete animalArr[i];
 	}
-
-	Dog dogTest;
-	{
-		Dog tmp = dogTest;
-	}
+	// Abstract class test
+	//Animal *test = new Animal();
 
 	delete j;
 	delete i;

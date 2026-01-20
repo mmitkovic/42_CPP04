@@ -24,10 +24,11 @@ Animal::~Animal()
 	std::cout << "~Animal" << std::endl;
 }
 
+/*
 void Animal::makeSound() const
 {
 	std::cout << this->type << " makes sound" << std::endl;
-}
+}*/
 
 std::string Animal::getType() const { return this->type; }
 
