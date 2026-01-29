@@ -5,32 +5,32 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/20 14:03:22 by mmitkovi          #+#    #+#              #
-#    Updated: 2026/01/20 14:03:23 by mmitkovi         ###   ########.fr        #
+#    Created: 2026/01/20 13:58:20 by mmitkovi          #+#    #+#              #
+#    Updated: 2026/01/21 12:00:42 by mmitkovi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	:= brain
+NAME	:= materia
 
 CXX     := c++
 CXXFLAGS:= -Wall -Wextra -Werror -std=c++98
 
 SRCS    := main.cpp \
-           Animal.cpp \
-	Cat.cpp \
-	Dog.cpp \
-	WrongAnimal.cpp \
-	WrongCat.cpp \
-	Brain.cpp
+           AMateria.cpp \
+	Character.cpp \
+	Cure.cpp \
+	Ice.cpp \
+	MateriaSource.cpp
 
 OBJS    := $(SRCS:.cpp=.o)
 
-DEPS    := Animal.hpp \
-	   Cat.hpp \
-	   Dog.hpp \
-	   WrongAnimal.hpp \
-	   WrongCat.hpp \
-	   Brain.hpp
+DEPS    := AMateria.hpp \
+	   Character.hpp \
+	   Cure.hpp \
+	   Ice.hpp \
+	   ICharacter.hpp \
+	   MateriaSource.hpp \
+	   IMateriaSource.hpp
 
 all: $(NAME)
 

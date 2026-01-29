@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/20 13:58:34 by mmitkovi          #+#    #+#             */
+/*   Updated: 2026/01/29 10:05:57 by mmitkovi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Animal.hpp"
 #include <iostream>
 
@@ -24,14 +36,7 @@ Animal::~Animal()
 	std::cout << "~Animal" << std::endl;
 }
 
-/*
-void Animal::makeSound() const
-{
-	std::cout << this->type << " makes sound" << std::endl;
-}*/
-
 std::string Animal::getType() const { return this->type; }
-
 
 void Animal::setIdea(std::string idea, int pos) { 
 	(void)idea; 
